@@ -1,7 +1,9 @@
+from dataclasses import dataclass
+
+@dataclass
 class gasto:
-    def __init__(self, nome, valor):
-        self.nome = nome
-        self.valor = valor
+    nome: str
+    valor: float
 
 gastos_list = []
 
@@ -15,4 +17,4 @@ def gastos():
             gastos_list.append(gasto(nome, valor))
             print(f"Gasto adicionado com sucesso \n")
         except ValueError:
-            print("Por favor, ingrese un número válido.")
+            print("Por favor, digite um número válido.")

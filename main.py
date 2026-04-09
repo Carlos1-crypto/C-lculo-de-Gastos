@@ -10,7 +10,6 @@ def calculos():
             break
         except ValueError:
             print("Por favor, ingresse um número válido para o salário.\n")
-            return
         
     gastos()
     for g in gastos_list:
