@@ -2,6 +2,7 @@ from dataclasses import dataclass
 
 @dataclass
 class gasto:
+    __slots__ = ['nome', 'valor']
     nome: str
     valor: float
 
